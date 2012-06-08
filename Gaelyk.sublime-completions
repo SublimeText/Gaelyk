@@ -1,0 +1,12 @@
+{
+	"scope": "text.html.gtpl",
+	"completions":
+	[
+		{ "trigger": "import", "contents": "<% import \"${1}\" %>" },
+		{ "trigger": "blobkey", "contents": "<% import com.google.appengine.api.blobstore.BlobKey %>" },
+		{ "trigger": "redirect", "contents": "<% redirect \"${1}\" %>" },
+		{ "trigger": "include", "contents": "<% include \"${1}\" %>" },
+		{ "trigger": "forward", "contents": "<% forward \"${1}\" %>" }
+	]
+}
+

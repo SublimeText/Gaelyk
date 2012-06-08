@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gtpl</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*|\{\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>\*\*/|^\s*\}</string>
+	<key>name</key>
+	<string>Gaelyk Template</string>
+	<key>patterns</key>
+	<array>
+		<!-- BEGIN <% GROOVY INCLUDE -->
+		<dict>
+			<key>begin</key>
+			<string>(&lt;%=?)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.begin.groovy</string>
+				</dict>
+			</dict>
+
+			<key>end</key>
+			<string>(%&gt;)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.end.groovy</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>source.groovy</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.groovy</string>
+				</dict>
+			</array>
+		</dict>
+		<!-- END %> GROOVY INCLUDE -->
+
+		<!-- ${WORD} g-string match -->
+		<dict>
+			<key>match</key>
+			<string>\$\{(\w+)\}</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>source.groovy</string>
+				</dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.groovy</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>source.groovy</string>
+				</dict>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
+
+	</array>
+
+	<key>scopeName</key>
+	<string>text.html.gtpl</string>
+	<key>uuid</key>
+	<string>B565B5A5-ED18-E836-AEBB-5870FBC0287E</string>
+</dict>
+</plist>

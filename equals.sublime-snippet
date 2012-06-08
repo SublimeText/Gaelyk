@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[<%= ${1:variable} %>]]></content>
+    <tabTrigger>=</tabTrigger>
+    <scope>text.html.gtpl</scope>
+    <description>Groovy Variable</description>
+</snippet>
