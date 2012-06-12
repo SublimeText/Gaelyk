@@ -3,6 +3,6 @@
 $0
 <% } %>]]></content>
     <tabTrigger>if</tabTrigger>
-    <scope>text.html.gtpl</scope>
+    <scope>text.html.gtpl - string</scope>
     <description>if</description>
 </snippet>

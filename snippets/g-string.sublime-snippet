@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[\${${1:variable}}]]></content>
     <tabTrigger>g</tabTrigger>
-    <scope>source.groovy, text.html.gtpl</scope>
+    <scope>text.html.gtpl, source.groovy string, source.groovy.embedded.html string</scope>
     <description>G-String Variable</description>
 </snippet>
