@@ -37,8 +37,8 @@
 					<string>punctuation.section.embedded.end.groovy</string>
 				</dict>
 			</dict>
-			<key>name</key>
-			<string>source.groovy</string>
+			<key>contentName</key>
+			<string>source.groovy.embedded.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
