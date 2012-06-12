@@ -52,23 +52,13 @@
 		<!-- ${WORD} g-string match -->
 		<dict>
 			<key>match</key>
-			<string>\$\{(\w+)\}</string>
+			<string>\${(\w+)}</string>
 			<key>captures</key>
 			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>source.groovy</string>
-				</dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>variable.other.groovy</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>source.groovy</string>
 				</dict>
 			</dict>
 		</dict>
